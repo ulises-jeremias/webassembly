@@ -1,0 +1,26 @@
+{
+  "name": "webassembly",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "version": "1.0.0",
+  "description": "Example repository to test the operation of https://github.com/dcodeIO/webassembly",
+  "main": "lib/webassembly-example.js",
+  "repository": "git@github.com:ulises-jeremias/webassembly.git",
+  "author": "ulises-jeremias <ulisescf.24@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "wa compile src/main.c -o src/main.wasm",
+    "preset": "npm run build",
+    "test": "node src/main.js"
+  },
+  "dependencies": {
+    "webassembly": "^0.11.0"
+  }
+}
